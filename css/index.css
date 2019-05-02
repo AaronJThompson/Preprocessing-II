@@ -1,3 +1,12 @@
+.secondary-button {
+  border: none;
+  font-weight: bold;
+  padding: 1em 4.5em;
+  background-color: #17A2B8;
+  border-radius: 1em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -197,7 +206,7 @@ header.navigation::after {
   content: '';
   display: block;
   width: 100vw;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 0.2rem dashed #C0C0C0;
 }
 .footer {
   width: 100%;
@@ -270,4 +279,13 @@ header.navigation::after {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination button {
+  border: none;
+  font-weight: bold;
+  padding: 1em 4.5em;
+  background-color: #17A2B8;
+  border-radius: 1em;
+  color: #FFFFFF;
+  text-decoration: none;
 }
