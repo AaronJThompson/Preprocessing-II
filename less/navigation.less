@@ -1,1 +1,33 @@
 // Navigation Styles here
+
+header{
+    &.navigation{
+        min-height: @fontXLarge;
+        .nav-bar{
+            min-height: @fontXLarge;
+            .flex-row(space-between, flex-start);
+            nav{
+                font-size: @fontSmall;
+                height: 100%;
+                width:@fontXLarge * 8;
+                .flex-row(space-between, center);
+    
+                a{
+                    text-decoration: none;
+                    color: @shark;
+                }
+            }
+            @media @mobile{
+                .flex-column(flex-start, center);
+            }
+        }
+        &::after{
+            left:0;
+            position: absolute;
+            content: '';
+            display: block;
+            width:100%;
+            .navigation-border(0.2rem);
+        }
+    }
+}

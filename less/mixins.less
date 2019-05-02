@@ -1,1 +1,38 @@
 // Mixins in here
+.flex-row(@justify: flex-start, @align: stretch){
+    display: flex;
+    flex-direction: row;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.flex-column(@justify: flex-start, @align: stretch){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.navigation-border(@width: 2px){
+    border-bottom: @width dashed @navigation-border;
+}
+.secondary-button{
+    border:none;
+    font-weight: bold;
+    padding: 1em 4.5em;
+    background-color: @eastern-blue;
+    border-radius: 1em;
+    color:@white;
+    text-decoration: none;
+}
+
+.scale-animation(@scale, @duration){
+    -moz-transition: all @duration;
+    -webkit-transition: all @duration;
+    transition: all @duration;
+    &:hover{
+        -moz-transform: scale(@scale);
+        -webkit-transform: scale(@scale);
+        transform: scale(@scale);
+    }
+}
