@@ -2,13 +2,29 @@
 
 header{
     &.navigation{
-        .flex-row(space-between, flex-start);
         height: @fontXLarge;
-        nav{
-            font-size: @fontSmall;
-            height: 100%;
-            width:@fontXLarge * 8;
-            .flex-row(space-between, center);
+        .nav-bar{
+            height: @fontXLarge;
+            .flex-row(space-between, flex-start);
+            nav{
+                font-size: @fontSmall;
+                height: 100%;
+                width:@fontXLarge * 8;
+                .flex-row(space-between, center);
+    
+                a{
+                    text-decoration: none;
+                    color: @shark;
+                }
+            }
+        }
+        &::after{
+            left:0;
+            position: absolute;
+            content: '';
+            display: block;
+            width:100vw;
+            .navigation-border;
         }
     }
 }

@@ -169,13 +169,16 @@ img {
   margin: 0 auto;
 }
 header.navigation {
+  height: 4rem;
+}
+header.navigation .nav-bar {
+  height: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  height: 4rem;
 }
-header.navigation nav {
+header.navigation .nav-bar nav {
   font-size: 1.6rem;
   height: 100%;
   width: 32rem;
@@ -183,6 +186,18 @@ header.navigation nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+header.navigation .nav-bar nav a {
+  text-decoration: none;
+  color: #212529;
+}
+header.navigation::after {
+  left: 0;
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100vw;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .footer {
   width: 100%;
