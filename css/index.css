@@ -173,6 +173,16 @@ header.navigation {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  height: 4rem;
+}
+header.navigation nav {
+  font-size: 1.6rem;
+  height: 100%;
+  width: 32rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer {
   width: 100%;

@@ -3,6 +3,12 @@
 header{
     &.navigation{
         .flex-row(space-between, flex-start);
-
+        height: @fontXLarge;
+        nav{
+            font-size: @fontSmall;
+            height: 100%;
+            width:@fontXLarge * 8;
+            .flex-row(space-between, center);
+        }
     }
 }
