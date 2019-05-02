@@ -6,6 +6,13 @@
     align-items: @align;
 }
 
+.flex-column(@justify: flex-start, @align: stretch){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-items: @align;
+}
+
 .navigation-border(@width: 2px){
     border-bottom: @width dashed @navigation-border;
 }

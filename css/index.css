@@ -227,6 +227,17 @@ header.navigation::after {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+.home .content-section.header {
+  margin-top: 0;
+  align-items: flex-start;
+}
+.home .content-section.header img {
+  height: auto;
+  margin-bottom: 1.6rem;
+}
+.home .content-section.header .text-content {
+  width: 100%;
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
