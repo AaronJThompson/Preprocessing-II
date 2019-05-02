@@ -25,3 +25,14 @@
     color:@white;
     text-decoration: none;
 }
+
+.scale-animation(@scale, @duration){
+    -moz-transition: all @duration;
+    -webkit-transition: all @duration;
+    transition: all @duration;
+    &:hover{
+        -moz-transform: scale(@scale);
+        -webkit-transform: scale(@scale);
+        transform: scale(@scale);
+    }
+}
