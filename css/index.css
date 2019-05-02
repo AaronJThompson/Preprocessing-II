@@ -215,6 +215,7 @@ header.navigation::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -237,6 +238,9 @@ header.navigation::after {
 }
 .home .content-section.header .text-content {
   width: 100%;
+}
+.home .content-section:nth-of-type(2) {
+  border-bottom: none;
 }
 .home .inverse-content {
   padding-bottom: 30px;
