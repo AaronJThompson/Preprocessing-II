@@ -218,7 +218,7 @@ header.navigation::after {
   position: absolute;
   content: '';
   display: block;
-  width: 100vw;
+  width: 100%;
   border-bottom: 0.2rem dashed #C0C0C0;
 }
 .footer {
