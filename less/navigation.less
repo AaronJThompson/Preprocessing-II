@@ -2,9 +2,9 @@
 
 header{
     &.navigation{
-        height: @fontXLarge;
+        min-height: @fontXLarge;
         .nav-bar{
-            height: @fontXLarge;
+            min-height: @fontXLarge;
             .flex-row(space-between, flex-start);
             nav{
                 font-size: @fontSmall;
@@ -16,6 +16,9 @@ header{
                     text-decoration: none;
                     color: @shark;
                 }
+            }
+            @media @mobile{
+                .flex-column(flex-start, center);
             }
         }
         &::after{
